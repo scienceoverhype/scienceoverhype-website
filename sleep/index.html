@@ -31,7 +31,7 @@
    <li>A 5-minute trick for a racing mind</li>
   </ul>
   <p>Plus a daily tracker, and every source listed.</p>
-  <form class="signup" action="#" method="post">
+  <form class="signup" action="https://assets.mailerlite.com/jsonp/2796942/forms/204186432875529452/subscribe" method="post">
  <input type="text" name="fields[name]" placeholder="First name" autocomplete="given-name">
  <input type="email" name="fields[email]" placeholder="Email" required autocomplete="email">
  <label class="consent"><input type="checkbox" name="gdpr[]" value="consent" required><span>I agree to receive emails from Science Over Hype. Unsubscribe anytime. See our <a href="/privacy/">privacy policy</a>.</span></label>
@@ -63,7 +63,7 @@ document.querySelectorAll('form.signup').forEach(function(f){
   e.preventDefault(); var b=f.querySelector('button'); b.disabled=true; b.textContent='Sending…';
   fetch(action,{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
    if(d&&d.success){f.querySelectorAll('input,button').forEach(function(x){x.style.display='none'});f.querySelector('label.consent').style.display='none';
-    msg.innerHTML='<strong>Check your inbox.</strong> Your Sleep Reset is on its way. (Not there in 2 minutes? Check Promotions or Spam.)';}
+    msg.innerHTML='<strong>Almost done. Check your inbox.</strong> Tap the confirm button in our email, and your Sleep Reset arrives right after. (Not there in 2 minutes? Check Promotions or Spam.)';}
    else{b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please check your email and try again.';}
   }).catch(function(){b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please try again.';});
  });

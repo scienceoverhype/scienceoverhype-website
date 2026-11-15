@@ -3,7 +3,7 @@ import os
 
 SITE = "https://scienceoverhype.com"
 # MailerLite embedded form endpoint (filled in once the MailerLite form exists)
-ML_ACTION = os.environ.get("ML_ACTION", "")
+ML_ACTION = os.environ.get("ML_ACTION", "https://assets.mailerlite.com/jsonp/2796942/forms/204186432875529452/subscribe")
 
 HEAD = """<!doctype html>
 <html lang="en"><head>
@@ -45,7 +45,7 @@ document.querySelectorAll('form.signup').forEach(function(f){
   e.preventDefault(); var b=f.querySelector('button'); b.disabled=true; b.textContent='Sending…';
   fetch(action,{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
    if(d&&d.success){f.querySelectorAll('input,button').forEach(function(x){x.style.display='none'});f.querySelector('label.consent').style.display='none';
-    msg.innerHTML='<strong>Check your inbox.</strong> Your Sleep Reset is on its way. (Not there in 2 minutes? Check Promotions or Spam.)';}
+    msg.innerHTML='<strong>Almost done. Check your inbox.</strong> Tap the confirm button in our email, and your Sleep Reset arrives right after. (Not there in 2 minutes? Check Promotions or Spam.)';}
    else{b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please check your email and try again.';}
   }).catch(function(){b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please try again.';});
  });
