@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About | Science Over Hype</title>
+<meta name="description" content="Science Over Hype is run by Nitish Vaibhav: short, evidence-based health content for people who want proof, not hype.">
+<link rel="canonical" href="https://scienceoverhype.com/about/">
+<meta property="og:title" content="About | Science Over Hype"><meta property="og:description" content="Science Over Hype is run by Nitish Vaibhav: short, evidence-based health content for people who want proof, not hype.">
+<meta property="og:image" content="https://scienceoverhype.com/assets/og.jpg"><meta property="og:url" content="https://scienceoverhype.com/about/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Serif:ital@0;1&family=Geist+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head><body>
+<header class="site"><div class="wrap">
+ <a class="logo" href="/" aria-label="Science Over Hype home"><img src="/assets/logo-black.png" alt="Science Over Hype"></a>
+ <nav><a href="/how-we-work/">How we work</a><a href="/about/">About</a><a class="cta" href="/sleep/">Free guide</a></nav>
+</div></header>
+
+<section><div class="wrap prose">
+ <div class="k">About</div>
+ <h1 style="margin-top:14px">Hi, I'm Nitish.</h1>
+ <p class="it" style="font-size:24px">Science Over Hype started with my own blood report.</p>
+ <p>I moved into a hostel after my 10th standard, and that's where the junk food years began. Through school and then college in Bangalore, I ate whatever was quick and cheap, and never thought about it.</p>
+ <p>By 2019, in my mid-twenties, I was constantly low on energy. That's when I got my first proper blood test. The results: <strong>prediabetic, with high cholesterol</strong>. I was young, and I'd assumed this was something that happens to other people, much later.</p>
+ <p>So I started experimenting on myself: food, sleep, movement, my mindset. Like many people, I also went looking for a magic supplement. What I found instead was a market full of cheap, overhyped products. So I started importing from trusted international brands, which cost me a fortune once you add import duties and taxes, and I started reading the research papers behind every ingredient.</p>
+ <p>Years of trial, error and reading later, my reports are back in the normal range. The biggest lesson surprised me: it wasn't one miracle product. Supplements alone can't fix you from the inside. At best, they fill the gaps in what you're missing. The real change came from simple, consistent habits and the right food, with a few well-chosen supplements filling those gaps, all backed by evidence.</p>
+ <p>That's what Science Over Hype is about. We read the research on sleep, food, blood sugar, focus, habits and supplements, and turn it into simple things you can actually do, with every source shown. When something works, we show you how. When it doesn't, we call it hype.</p>
+ <p style="font-size:14px;color:var(--grey)">This is my personal story, not a treatment plan. If you have prediabetes, diabetes or high cholesterol, work with your doctor.</p>
+ <h2>Where this is going</h2>
+ <p>Science Over Hype is building a community of people who want to get healthier with evidence, not marketing. Over time, that means free guides and challenges, deeper long-form videos, and eventually programs and products held to the same standard as everything we publish.</p>
+ <p>Follow along on <a href="https://www.instagram.com/thescienceoverhype/" target="_blank" rel="noopener">Instagram</a> and <a href="https://www.youtube.com/@thescienceoverhype" target="_blank" rel="noopener">YouTube</a>, or start with the <a href="/sleep/">free 7-Day Sleep Reset</a>.</p>
+ <p style="margin-top:30px">Nitish Vaibhav<br><span class="it" style="font-size:22px">Hype nahi, science.</span></p>
+</div></section>
+<footer class="site"><div class="wrap">
+ <div class="row">
+  <div><div class="tag">Hype nahi, science.</div><p style="margin-top:10px">Health, mind &amp; body, checked against real studies.</p></div>
+  <div>
+   <a href="https://www.instagram.com/thescienceoverhype/" target="_blank" rel="noopener">Instagram</a>
+   <a href="https://www.youtube.com/@thescienceoverhype" target="_blank" rel="noopener">YouTube</a>
+   <a href="https://x.com/scienceoverhype" target="_blank" rel="noopener">X</a>
+   <a href="/privacy/">Privacy</a>
+  </div>
+ </div>
+ <p class="fine">© 2026 Science Over Hype. Educational content only, not medical advice. Talk to a qualified doctor before changing medication, diet or supplements, especially if you have a health condition.</p>
+</div></footer>
+<script>
+document.querySelectorAll('form.signup').forEach(function(f){
+ f.addEventListener('submit',function(e){
+  var action=f.getAttribute('action'); var msg=f.querySelector('.form-msg');
+  if(!action||action==='#'){e.preventDefault();msg.textContent='Signups open very soon.';return;}
+  e.preventDefault(); var b=f.querySelector('button'); b.disabled=true; b.textContent='Sending…';
+  fetch(action,{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
+   if(d&&d.success){f.querySelectorAll('input,button').forEach(function(x){x.style.display='none'});f.querySelector('label.consent').style.display='none';
+    msg.innerHTML='<strong>Check your inbox.</strong> Your Sleep Reset is on its way. (Not there in 2 minutes? Check Promotions or Spam.)';}
+   else{b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please check your email and try again.';}
+  }).catch(function(){b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please try again.';});
+ });
+});
+</script>
+</body></html>

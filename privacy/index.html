@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy | Science Over Hype</title>
+<meta name="description" content="How Science Over Hype collects, uses and protects your personal data.">
+<link rel="canonical" href="https://scienceoverhype.com/privacy/">
+<meta property="og:title" content="Privacy policy | Science Over Hype"><meta property="og:description" content="How Science Over Hype collects, uses and protects your personal data.">
+<meta property="og:image" content="https://scienceoverhype.com/assets/og.jpg"><meta property="og:url" content="https://scienceoverhype.com/privacy/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Serif:ital@0;1&family=Geist+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head><body>
+<header class="site"><div class="wrap">
+ <a class="logo" href="/" aria-label="Science Over Hype home"><img src="/assets/logo-black.png" alt="Science Over Hype"></a>
+ <nav><a href="/how-we-work/">How we work</a><a href="/about/">About</a><a class="cta" href="/sleep/">Free guide</a></nav>
+</div></header>
+
+<section><div class="wrap prose">
+ <div class="k">Last updated: 15 November 2026</div>
+ <h1 style="margin-top:14px">Privacy policy</h1>
+ <p>This policy explains how Science Over Hype ("we", "us") handles your personal data when you use scienceoverhype.com or sign up for our emails.</p>
+ <h2>What we collect</h2>
+ <ul>
+  <li><strong>When you sign up:</strong> your first name (optional) and email address, plus the date and the page you signed up from.</li>
+  <li><strong>When you read our emails:</strong> whether an email was opened and which links were clicked, so we can improve our content.</li>
+  <li><strong>When you write to us:</strong> whatever you choose to include in your message.</li>
+ </ul>
+ <p>We don't collect payment details, health records or sensitive personal data through this website.</p>
+ <h2>Why we use it</h2>
+ <ul>
+  <li>To send you the free guide you asked for and the emails you agreed to receive.</li>
+  <li>To understand which content is useful, and to reply when you write to us.</li>
+ </ul>
+ <p>We use your data only with your consent, which you give by ticking the box when you sign up. You can withdraw it at any time.</p>
+ <h2>Who processes it</h2>
+ <p>Our email list is managed by MailerLite (MailerLite UAB), which stores and sends emails on our behalf under its own security and privacy standards. We don't sell, rent or share your data with anyone for their own marketing.</p>
+ <h2>How long we keep it</h2>
+ <p>We keep your data while you're subscribed. If you unsubscribe, we stop emailing you, and you can ask us to delete your data completely.</p>
+ <h2>Your rights</h2>
+ <ul>
+  <li>Unsubscribe anytime using the link at the bottom of every email.</li>
+  <li>Ask to see, correct or delete the data we hold about you.</li>
+  <li>Raise a concern with us about how your data is handled.</li>
+ </ul>
+ <h2>Contact</h2>
+ <p>Email <a href="mailto:thescienceoverhype@gmail.com">thescienceoverhype@gmail.com</a> for any privacy request. We aim to respond within 7 days.</p>
+</div></section>
+<footer class="site"><div class="wrap">
+ <div class="row">
+  <div><div class="tag">Hype nahi, science.</div><p style="margin-top:10px">Health, mind &amp; body, checked against real studies.</p></div>
+  <div>
+   <a href="https://www.instagram.com/thescienceoverhype/" target="_blank" rel="noopener">Instagram</a>
+   <a href="https://www.youtube.com/@thescienceoverhype" target="_blank" rel="noopener">YouTube</a>
+   <a href="https://x.com/scienceoverhype" target="_blank" rel="noopener">X</a>
+   <a href="/privacy/">Privacy</a>
+  </div>
+ </div>
+ <p class="fine">© 2026 Science Over Hype. Educational content only, not medical advice. Talk to a qualified doctor before changing medication, diet or supplements, especially if you have a health condition.</p>
+</div></footer>
+<script>
+document.querySelectorAll('form.signup').forEach(function(f){
+ f.addEventListener('submit',function(e){
+  var action=f.getAttribute('action'); var msg=f.querySelector('.form-msg');
+  if(!action||action==='#'){e.preventDefault();msg.textContent='Signups open very soon.';return;}
+  e.preventDefault(); var b=f.querySelector('button'); b.disabled=true; b.textContent='Sending…';
+  fetch(action,{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
+   if(d&&d.success){f.querySelectorAll('input,button').forEach(function(x){x.style.display='none'});f.querySelector('label.consent').style.display='none';
+    msg.innerHTML='<strong>Check your inbox.</strong> Your Sleep Reset is on its way. (Not there in 2 minutes? Check Promotions or Spam.)';}
+   else{b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please check your email and try again.';}
+  }).catch(function(){b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please try again.';});
+ });
+});
+</script>
+</body></html>
