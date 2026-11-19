@@ -82,20 +82,20 @@ PAGES["/"] = ("Science Over Hype | Health, mind & body, checked against real stu
  <img class="logo-big" src="/assets/logoC-full-white.png" alt="Science Over Hype">
  <div class="k">What studies say</div>
  <h1 style="margin-top:14px">Health, mind &amp; body,<br><span class="it">checked against real studies.</span></h1>
- <p class="lead">The internet gives you a thousand health tips and very little proof. We read the research on sleep, food, blood sugar, focus, habits and supplements, and turn it into simple things you can actually do. What works, we show you how. What doesn't, we call it hype.</p>
+ <p class="lead">The internet gives you a thousand health tips and very little proof. We read the research on sleep, food, blood sugar, focus, habits and supplements, and turn it into simple things you can actually do. Clear explanations, practical guides and the full evidence, so you can make better choices for your body, mind and life.</p>
  <a class="btn solid" href="/sleep/">Get the free 7-Day Sleep Reset</a>
  <a class="btn" href="https://www.instagram.com/thescienceoverhype/" target="_blank" rel="noopener">Follow on Instagram</a>
 </div></section>
 
 <section><div class="wrap">
  <div class="k">Every week</div>
- <h2 style="margin-top:12px">Three videos. One standard.</h2>
+ <h2 style="margin-top:12px">Three deep dives. One standard.</h2>
  <div class="grid3">
-  <div class="card"><div class="day">MONDAY · VERDICT</div><h3>A viral claim, judged.</h3><p>21 days to build a habit? Detox drinks? We check the studies and stamp it.</p>
-   <span class="stamp">SCIENCE</span><span class="stamp">PARTLY</span><span class="stamp">HYPE</span></div>
-  <div class="card"><div class="day">WEDNESDAY · GUIDE</div><h3>A real problem, solved.</h3><p>Sleep, focus, blood sugar, stress: why it matters, and the habits the research actually supports.</p></div>
-  <div class="card"><div class="day">FRIDAY · SUPPLEMENT FILE</div><h3>One supplement, the full evidence.</h3><p>What it does, who may need it, how strong the evidence is, and when to skip it. Test first, never megadose.</p></div>
+  <div class="card"><div class="day">MONDAY · EXPLAINER</div><h3>What's really happening inside you.</h3><p>Stress, sleep, hunger, hormones, focus: what your body and mind are doing, explained simply.</p></div>
+  <div class="card"><div class="day">WEDNESDAY · GUIDE</div><h3>A real problem, solved.</h3><p>Overthinking, poor sleep, low energy, blood sugar: why it happens, and the habits the research actually supports.</p></div>
+  <div class="card"><div class="day">FRIDAY · THE FILE</div><h3>One supplement or food, the full evidence.</h3><p>What it does, who may benefit, how strong the evidence is, the dose used in studies, and when to skip it.</p></div>
  </div>
+ <p style="margin-top:22px;color:#333">Plus quick Reels on Tuesday and Thursday, a save-worthy list on Saturday, and a real story on Sunday.</p>
 </div></section>
 
 <section class="dark"><div class="wrap">
@@ -144,18 +144,21 @@ PAGES["/sleep/"] = ("Free 7-Day Sleep Reset | Science Over Hype",
 """)
 
 PAGES["/how-we-work/"] = ("How we work | Science Over Hype",
- "Our evidence standards: how we read studies, how we give verdicts, and the rules we never break.",
+ "Our evidence standards: what we make, how we read studies, and the rules we never break.",
  """
 <section><div class="wrap prose">
  <div class="k">Our standards</div>
  <h1 style="margin-top:14px">How we work</h1>
- <p class="it" style="font-size:24px">Every claim gets checked. Every source gets shown.</p>
+ <p class="it" style="font-size:24px">Your body, mind and life, checked against real studies.</p>
  <h2>What we make</h2>
  <ul>
-  <li><strong>Verdict (Mon):</strong> a viral health claim, judged against the research: SCIENCE, PARTLY or HYPE.</li>
-  <li><strong>Guide (Wed):</strong> a real-life problem, why it matters, and the habits the evidence supports.</li>
-  <li><strong>Supplement File (Fri):</strong> one supplement: what it does, who may need it, how strong the evidence is, and safety.</li>
-  <li><strong>Carousels (Tue, Thu, Sat):</strong> one topic, one point per slide, a source on every slide.</li>
+  <li><strong>Explainer (Mon):</strong> what is really happening in your body or mind, from stress and sleep to hormones and focus.</li>
+  <li><strong>Guide (Wed):</strong> a real-life problem, why it happens, and the habits the evidence supports.</li>
+  <li><strong>The File (Fri):</strong> one supplement or food: what it does, who may benefit, how strong the evidence is, the dose used in studies, and safety.</li>
+  <li><strong>Quick Reels (Tue, Thu):</strong> one study, one takeaway, in under a minute.</li>
+  <li><strong>Lists (Sat):</strong> practical, save-worthy checklists and swaps.</li>
+  <li><strong>Sunday Story:</strong> a real story from our founder's life, and the science that explains it.</li>
+  <li><strong>Research articles:</strong> every video gets a full write-up on this site, with every source linked.</li>
  </ul>
  <h2>How we read research</h2>
  <ul>
@@ -168,14 +171,15 @@ PAGES["/how-we-work/"] = ("How we work | Science Over Hype",
  <ul>
   <li>No disease claims. Food and supplements don't "cure" or "reverse" conditions.</li>
   <li>No fear-selling, no fake urgency, no AI images of real people.</li>
-  <li>Honest verdicts even when the evidence is weak, including on things people love.</li>
+  <li>Honest answers even when the evidence is weak, including on things people love.</li>
   <li>If we ever sell our own products, we'll say so clearly, and show the same evidence we'd show for anyone else's.</li>
  </ul>
  <h2>Not medical advice</h2>
  <p>We explain research so you can make better everyday choices. We're not your doctor. If you have a health condition, take medication or are pregnant, talk to a qualified doctor before changing anything.</p>
- <p>Found a mistake? Tell us at <a href="mailto:thescienceoverhype@gmail.com">thescienceoverhype@gmail.com</a>. We correct errors openly.</p>
+ <p>Spotted something we got wrong? Tell us at <a href="mailto:thescienceoverhype@gmail.com">thescienceoverhype@gmail.com</a> and we'll update the page.</p>
 </div></section>
 """)
+
 
 PAGES["/about/"] = ("About | Science Over Hype",
  "Science Over Hype is run by Nitish Vaibhav: short, evidence-based health content for people who want proof, not hype.",

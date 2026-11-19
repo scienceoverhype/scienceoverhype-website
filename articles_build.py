@@ -48,7 +48,7 @@ def page(a, by_slug, form):
  <div class="crumbs k"><a href="/research/">Research</a> · {a["series"]} · #{a["num"]}</div>
  <h1>{esc(a['title'])}</h1>
  <p class="meta">By <a href="{AUTHOR['url']}">{AUTHOR['name']}</a> · Last reviewed {human(a['reviewed'])} · Educational, not medical advice</p>
- <div class="verdict"><div class="vlabel k">The short answer</div><span class="stamp">{STAMP[a['verdict']]}</span><p>{esc(a['verdict_text'])}</p></div>
+ <div class="verdict"><div class="vlabel k">The short answer</div><p>{esc(a['verdict_text'])}</p></div>
  {secs}
  <h2>Frequently asked questions</h2>
  <div class="faq">{faq}</div>
@@ -63,7 +63,7 @@ def page(a, by_slug, form):
 def index(arts):
     cards = "".join(
         f'<a class="card rcard" href="/research/{a["slug"]}/"><div class="day">{a["series"].upper()} · #{a["num"]}</div>'
-        f'<h3>{esc(a["title"])}</h3><span class="stamp small">{STAMP[a["verdict"]]}</span><p>{esc(a["desc"])}</p></a>'
+        f'<h3>{esc(a["title"])}</h3><p>{esc(a["desc"])}</p></a>'
         for a in sorted(arts, key=lambda a: a["num"], reverse=True))
     return f"""
 <section><div class="wrap">

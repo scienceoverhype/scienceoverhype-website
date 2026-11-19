@@ -1,5 +1,5 @@
 """Research articles for scienceoverhype.com/research/.
-One dict per article. build.py renders each into a page with a verdict box, question headings,
+One dict per article. build.py renders each into a page with a short-answer box, question headings,
 sources, a visible FAQ, an author box and JSON-LD (Article + FAQPage + BreadcrumbList)."""
 
 PM = "https://pubmed.ncbi.nlm.nih.gov/"
@@ -16,7 +16,7 @@ ARTICLES = [
 # ------------------------------------------------------------------ #01
 dict(
  slug="walking-after-meals-blood-sugar",
- num="01", series="Verdict",
+ num="01", series="Explainer",
  title="Does walking after a meal lower blood sugar?",
  desc="Yes. Studies show a light walk after eating lowers the post-meal blood sugar spike, even 2–5 minutes. Here is what the research found, how long to walk, and when.",
  published="2026-11-13", reviewed="2026-11-19",
@@ -77,7 +77,7 @@ dict(
 # ------------------------------------------------------------------ #02
 dict(
  slug="does-it-take-21-days-to-form-a-habit",
- num="02", series="Verdict",
+ num="02", series="Explainer",
  title="Does it take 21 days to form a habit?",
  desc="No. The 21-day rule comes from a 1960 self-help book. In a UCL study of 96 people, habits took 66 days on average to become automatic, from 18 to about 254 days.",
  published="2026-11-16", reviewed="2026-11-19",
@@ -184,7 +184,7 @@ dict(
 # ------------------------------------------------------------------ #04
 dict(
  slug="should-you-take-vitamin-d-supplement",
- num="04", series="Supplement File",
+ num="04", series="The File",
  title="Should you take a vitamin D supplement?",
  desc="Low vitamin D is common in India, but in the 5-year VITAL trial, 2,000 IU a day didn't meaningfully cut cancer or heart disease in mostly healthy adults. Test, fix a real deficiency, don't megadose.",
  published="2026-11-20", reviewed="2026-11-19",
