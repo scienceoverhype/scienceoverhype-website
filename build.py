@@ -68,7 +68,7 @@ import json
 SAME_AS = ["https://www.instagram.com/thescienceoverhype/", "https://www.youtube.com/@thescienceoverhype", "https://x.com/scienceoverhype"]
 ORG = {"@type": "Organization", "@id": SITE + "/#org", "name": "Science Over Hype", "url": SITE + "/",
        "logo": SITE + "/assets/logo-black.png", "sameAs": SAME_AS,
-       "description": "Science Over Hype: health, sleep and supplements, checked against real studies. Hype nahi, science.",
+       "description": "Science Over Hype: Your body, mind and life, checked against real studies. Hype nahi, science.",
        "founder": {"@type": "Person", "@id": SITE + "/about/#nitish", "name": "Nitish Vaibhav", "url": SITE + "/about/"}}
 ORG_LD = '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [ORG,
     {"@type": "WebSite", "@id": SITE + "/#site", "name": "Science Over Hype", "url": SITE + "/", "publisher": {"@id": SITE + "/#org"}}]}) + '</script>\n'
