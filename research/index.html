@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Research: health claims checked against real studies | Science Over Hype</title>
+<meta name="description" content="Evidence write-ups on sleep, blood sugar, habits and supplements, with a short answer first and every source linked.">
+<link rel="canonical" href="https://scienceoverhype.com/research/">
+<meta property="og:title" content="Research: health claims checked against real studies | Science Over Hype"><meta property="og:description" content="Evidence write-ups on sleep, blood sugar, habits and supplements, with a short answer first and every source linked.">
+<meta property="og:image" content="https://scienceoverhype.com/assets/og.jpg"><meta property="og:url" content="https://scienceoverhype.com/research/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/favicon.png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Serif:ital@0;1&family=Geist+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head><body>
+<header class="site"><div class="wrap">
+ <a class="logo" href="/" aria-label="Science Over Hype home"><img src="/assets/logoC-black.png" alt="Science Over Hype"></a>
+ <nav><a href="/research/">Research</a><a href="/how-we-work/">How we work</a><a href="/about/">About</a><a class="cta" href="/sleep/">Free guide</a></nav>
+</div></header>
+
+<section><div class="wrap">
+ <div class="k">Research</div>
+ <h1 style="margin-top:12px">Health claims,<br><span class="it">checked against real studies.</span></h1>
+ <p class="lead-dark" style="max-width:640px;margin-top:18px">Every video we make gets a full write-up here: the short answer first, then what the studies found, their limits, and links to every source.</p>
+ <div class="grid3"><a class="card rcard" href="/research/should-you-take-vitamin-d-supplement/"><div class="day">SUPPLEMENT FILE · #04</div><h3>Should you take a vitamin D supplement?</h3><span class="stamp small">PARTLY</span><p>Low vitamin D is common in India, but in the 5-year VITAL trial, 2,000 IU a day didn&#x27;t meaningfully cut cancer or heart disease in mostly healthy adults. Test, fix a real deficiency, don&#x27;t megadose.</p></a><a class="card rcard" href="/research/how-to-sleep-better-science/"><div class="day">GUIDE · #03</div><h3>How can you sleep better? What the research supports</h3><span class="stamp small">WHAT HELPS</span><p>What 6 hours of sleep does to hunger, immunity and focus, and the simple habits with real evidence: a fixed wake time, morning light, a caffeine cutoff and a cool, dark room.</p></a><a class="card rcard" href="/research/does-it-take-21-days-to-form-a-habit/"><div class="day">VERDICT · #02</div><h3>Does it take 21 days to form a habit?</h3><span class="stamp small">HYPE</span><p>No. The 21-day rule comes from a 1960 self-help book. In a UCL study of 96 people, habits took 66 days on average to become automatic, from 18 to about 254 days.</p></a><a class="card rcard" href="/research/walking-after-meals-blood-sugar/"><div class="day">VERDICT · #01</div><h3>Does walking after a meal lower blood sugar?</h3><span class="stamp small">SCIENCE</span><p>Yes. Studies show a light walk after eating lowers the post-meal blood sugar spike, even 2–5 minutes. Here is what the research found, how long to walk, and when.</p></a></div>
+</div></section>
+<footer class="site"><div class="wrap">
+ <div class="row">
+  <div><div class="tag">Hype nahi, science.</div><p style="margin-top:10px">Health, mind &amp; body, checked against real studies.</p></div>
+  <div>
+   <a href="https://www.instagram.com/thescienceoverhype/" target="_blank" rel="noopener">Instagram</a>
+   <a href="https://www.youtube.com/@thescienceoverhype" target="_blank" rel="noopener">YouTube</a>
+   <a href="https://x.com/scienceoverhype" target="_blank" rel="noopener">X</a>
+   <a href="/privacy/">Privacy</a>
+  </div>
+ </div>
+ <p class="fine">© 2026 Science Over Hype. Educational content only, not medical advice. Talk to a qualified doctor before changing medication, diet or supplements, especially if you have a health condition.</p>
+</div></footer>
+<script>
+document.querySelectorAll('form.signup').forEach(function(f){
+ f.addEventListener('submit',function(e){
+  var action=f.getAttribute('action'); var msg=f.querySelector('.form-msg');
+  if(!action||action==='#'){e.preventDefault();msg.textContent='Signups open very soon.';return;}
+  e.preventDefault(); var b=f.querySelector('button'); b.disabled=true; b.textContent='Sending…';
+  fetch(action,{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
+   if(d&&d.success){f.querySelectorAll('input,button').forEach(function(x){x.style.display='none'});f.querySelector('label.consent').style.display='none';
+    msg.innerHTML='<strong>Almost done. Check your inbox.</strong> Tap the confirm button in our email, and your Sleep Reset arrives right after. (Not there in 2 minutes? Check Promotions or Spam.)';}
+   else{b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please check your email and try again.';}
+  }).catch(function(){b.disabled=false;b.textContent='Send me the free guide';msg.textContent='Something went wrong. Please try again.';});
+ });
+});
+</script>
+</body></html>

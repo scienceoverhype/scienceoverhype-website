@@ -18,10 +18,10 @@ HEAD = """<!doctype html>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Serif:ital@0;1&family=Geist+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
-</head><body>
+{extra}</head><body>
 <header class="site"><div class="wrap">
  <a class="logo" href="/" aria-label="Science Over Hype home"><img src="/assets/logoC-black.png" alt="Science Over Hype"></a>
- <nav><a href="/how-we-work/">How we work</a><a href="/about/">About</a><a class="cta" href="/sleep/">Free guide</a></nav>
+ <nav><a href="/research/">Research</a><a href="/how-we-work/">How we work</a><a href="/about/">About</a><a class="cta" href="/sleep/">Free guide</a></nav>
 </div></header>
 """
 
@@ -63,6 +63,15 @@ def form(dark=False):
  <button type="submit">Send me the free guide</button>
  <div class="form-msg" role="status"></div>
 </form>"""
+
+import json
+SAME_AS = ["https://www.instagram.com/thescienceoverhype/", "https://www.youtube.com/@thescienceoverhype", "https://x.com/scienceoverhype"]
+ORG = {"@type": "Organization", "@id": SITE + "/#org", "name": "Science Over Hype", "url": SITE + "/",
+       "logo": SITE + "/assets/logo-black.png", "sameAs": SAME_AS,
+       "description": "Science Over Hype: health, sleep and supplements, checked against real studies. Hype nahi, science.",
+       "founder": {"@type": "Person", "@id": SITE + "/about/#nitish", "name": "Nitish Vaibhav", "url": SITE + "/about/"}}
+ORG_LD = '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": [ORG,
+    {"@type": "WebSite", "@id": SITE + "/#site", "name": "Science Over Hype", "url": SITE + "/", "publisher": {"@id": SITE + "/#org"}}]}) + '</script>\n'
 
 PAGES = {}
 
@@ -226,8 +235,10 @@ PAGES["/privacy/"] = ("Privacy policy | Science Over Hype",
 for path, (title, desc, body) in PAGES.items():
     out = "index.html" if path == "/" else path.strip("/") + "/index.html"
     with open(out, "w") as f:
-        f.write(HEAD.format(title=title, desc=desc, site=SITE, path=path) + body + FOOT)
+        f.write(HEAD.format(title=title, desc=desc, site=SITE, path=path, extra=ORG_LD if path == "/" else "") + body + FOOT)
 open("CNAME", "w").write("scienceoverhype.com\n")
-open("404.html", "w").write(HEAD.format(title="Not found | Science Over Hype", desc="Page not found.", site=SITE, path="/404") +
+open("404.html", "w").write(HEAD.format(title="Not found | Science Over Hype", desc="Page not found.", site=SITE, path="/404", extra="") +
   '<section><div class="wrap"><div class="k">404</div><h1 style="margin-top:14px">Not found.</h1><p class="it" style="font-size:24px">Unlike most health claims, this one is simply missing.</p><a class="btn solid" href="/">Go home</a></div></section>' + FOOT)
+import articles_build
+articles_build.build(HEAD, FOOT, SITE, form, list(PAGES))
 print("built", list(PAGES))
